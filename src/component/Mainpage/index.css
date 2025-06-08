@@ -23,3 +23,46 @@
 .icon-bilibili:before {
     content: "\e601";
 }
+
+/* 响应式头像大小 */
+.profile-avatar {
+    width: 180px !important;
+    height: 180px !important;
+    font-size: 60px !important;
+}
+
+/* 桌面端 - 更大的头像 */
+@media (min-width: 1200px) {
+    .profile-avatar {
+        width: 220px !important;
+        height: 220px !important;
+        font-size: 70px !important;
+    }
+}
+
+/* 超大屏幕 - 最大的头像 */
+@media (min-width: 1600px) {
+    .profile-avatar {
+        width: 250px !important;
+        height: 250px !important;
+        font-size: 80px !important;
+    }
+}
+
+/* 平板端 */
+@media (max-width: 768px) {
+    .profile-avatar {
+        width: 150px !important;
+        height: 150px !important;
+        font-size: 50px !important;
+    }
+}
+
+/* 手机端 */
+@media (max-width: 576px) {
+    .profile-avatar {
+        width: 120px !important;
+        height: 120px !important;
+        font-size: 40px !important;
+    }
+}
