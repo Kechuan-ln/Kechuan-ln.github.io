@@ -1,16 +1,11 @@
 ####  Introduction
 
-- I am a postdoctoral researcher at Peking University Shenzhen Graduate School. 
-- My research focuses on: transportation data science, transportation energy and emissions, electric vehicles, public transportation, urban planning & mobility, and agent-based simulation
+- I am a graduate student in Electronic Information Science and Engineering at the University of Tokyo, with research interests in deep learning, human pose estimation, spatial data science, and renewable energy estimation.
 
-####  Work Experience
+- My research focuses on the application of deep learning techniques to various fields, including human pose estimation, spatial data analysis, and renewable energy prediction.
 
-- 2023 till now, Postdoctoral Researcher, School of Urban Planning and Design, Peking University Shenzhen Graduate School
-- 2022-2023, Research Associate, Southern University of Science and Technology
 
 ####  Education
 
-- 2018-2022, PhD, Transportation Engineering, Tongji University
-- 2019-2020, Joint PhD, Center for Spatial Information Science (CSIS), The University of Tokyo
-- 2015-2018, MS, Transportation Engineering, Tongji University
-- 2011-2015, BS, Transportation Engineering, Guangdong University of Technology
+- 2023-present, Master, Information and Communication Engineering, The University of Tokyo
+- 2018-2022, Bachelor, Electronic Information Science and Technology, Lanzhou University

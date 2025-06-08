@@ -4,9 +4,7 @@ import { PageHeader } from '@ant-design/pro-components';
 import { AntDesignOutlined, TranslationOutlined, GoogleOutlined, MailOutlined, GithubOutlined, YoutubeOutlined } from '@ant-design/icons';
 import Introduction from '@/pages/Introduction';
 import Publication from '@/pages/Publication';
-import Projects from '@/pages/Projects';
 import Research from '@/pages/Research';
-import Group from '@/pages/Group';
 import News from '@/pages/News';
 import NewsDetail from '@/pages/News/NewsDetail';
 import Heading from '@/component/Heading';
@@ -25,20 +23,19 @@ export default function Mainpage() {
   const content = (
     <>
       <div style={{ marginBottom: '16px' }}>
-        <Text strong>{t('博士后')}</Text>
+        <Text strong>{t('Postgraduate Student')}</Text>
         <br />
-        <Text type="secondary" style={{ fontSize: '0.8em' }}>{t('北京大学深圳研究生院')}</Text>
+        <Text type="secondary" style={{ fontSize: '0.8em' }}>{t('University of Tokyo')}</Text>
         <br />
-        <Text type="secondary" style={{ fontSize: '0.8em' }}>{t('城市规划与设计学院')}</Text>
+        <Text type="secondary" style={{ fontSize: '0.8em' }}>{t('Information & Communication Engineering')}</Text>
         <br />
-        <Text type="secondary" style={{ fontSize: '0.8em' }}>{t('智慧城市实验室')}</Text>
+        <Text type="secondary" style={{ fontSize: '0.8em' }}>{t('Interactive Visual Intelligence Lab')}</Text>
       </div>
       <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
-        <Link href="mailto:yuq@pku.edu.cn" target="_blank" ><MailOutlined /> </Link>
-        <Link href="https://github.com/ni1o1/" target="_blank" ><GithubOutlined /> </Link>
-        <Link href="https://www.researchgate.net/profile/Qing_Yu51" target="_blank" ><span className="iconfont icon-researchgate" /></Link>
-        <Link href="https://scholar.google.com/citations?user=7m0xcqEAAAAJ&hl=zh-CN" target="_blank" ><GoogleOutlined /></Link>
-        <Link href="https://space.bilibili.com/3051484" target="_blank" ><span className="iconfont icon-bilibili" /></Link>
+        <Link href="kechuan.dong@outlook.com" target="_blank" ><MailOutlined /> </Link>
+        <Link href="https://github.com/Kechuan-ln" target="_blank" ><GithubOutlined /> </Link>
+        <Link href="https://www.researchgate.net/profile/Kechuan-Dong?ev=hdr_xprf" target="_blank" ><span className="iconfont icon-researchgate" /></Link>
+        <Link href="https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AH8HC4w8pf7glw7NvvHeCdYARheSILAJWyb7cy6m-wnpzKXlnspC1q1BVPKpe8Sv_wYTVLtEmwLCxTOwKDVw0H_3bwA&user=dm8zvHcAAAAJ" target="_blank" ><GoogleOutlined /></Link>
       </div>
     </>
   );
@@ -70,7 +67,7 @@ export default function Mainpage() {
                 </div>
                 <br />
                 <div>
-                  <Title level={4}>{t('余庆')} </Title>
+                  <Title level={4}>{t('董克川')} </Title>
                 </div>
                 <Content>
                   {content}
@@ -93,9 +90,7 @@ export default function Mainpage() {
                 { label: t("简介"), key: 'intro' },
                 { label: t("新闻"), key: 'news' },
                 { label: t("研究"), key: 'research' },
-                { label: t("论著"), key: 'publication' },
-                { label: t("开源"), key: 'projects' },
-                { label: t("团队"), key: 'group' }
+                { label: t("论著"), key: 'publication' }
               ]}
             />
             <Routes>
@@ -104,25 +99,12 @@ export default function Mainpage() {
               <Route path="/news" element={<News />} />
               <Route path="/research" element={<Research />} />
               <Route path="/publication" element={<Publication />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/group" element={<Group />} />
               <Route path="/news/:filename" element={<NewsDetail />} />
             </Routes>
           </Card>
         </div>
       </div>
-      <Row>
-        <Col span={24}>
-          <Footer style={{ backgroundColor: '#ffffff', textAlign: 'center' }}>{t("版权所有")} © 2025 {t("北京大学智慧城市实验室")} | yuq@pku.edu.cn
-            <br />
-            <img className="headimg" src="heading/heading.png" style={{
-              'margin': '10px',
-              'right': '0',
-              objectFit: 'contain'
-            }} height='40' ></img>
-          </Footer>
-        </Col>
-      </Row>
+
 
     </div>
 
