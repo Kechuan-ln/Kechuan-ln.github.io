@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- 主页 -->
+  <url>
+    <loc>https://kechuan-ln.github.io/kechuan.github.io/</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://kechuan-ln.github.io/kechuan.github.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kechuan-ln.github.io/kechuan.github.io/" />
+  </url>
+  
+  <!-- 简介页面 -->
+  <url>
+    <loc>https://kechuan-ln.github.io/kechuan.github.io/#/intro</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 新闻页面 -->
+  <url>
+    <loc>https://kechuan-ln.github.io/kechuan.github.io/#/news</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 研究页面 -->
+  <url>
+    <loc>https://kechuan-ln.github.io/kechuan.github.io/#/research</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 论著页面 -->
+  <url>
+    <loc>https://kechuan-ln.github.io/kechuan.github.io/#/publication</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset> 

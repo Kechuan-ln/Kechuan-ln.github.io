@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kechuan-ln.github.io/kechuan.github.io/sitemap.xml
+
+# Common crawl delays
+Crawl-delay: 1
+
+# Allow access to images and assets
+Allow: /images/
+Allow: /assets/
+Allow: /data/
+
+# Block access to source maps and config files (if any)
+Disallow: *.map
+Disallow: /node_modules/
+Disallow: /src/ 
