@@ -158,7 +158,14 @@ export default function Mainpage() {
                 { label: t("论著"), key: 'publication' }
               ]}
             />
-            <div style={{ flex: 1, overflow: 'auto', padding: '16px 0' }}>
+            <div 
+              style={{ 
+                flex: 1, 
+                overflow: 'auto', 
+                padding: '16px 8px',
+                minHeight: '60vh'
+              }}
+            >
               <Routes>
                 <Route path="/" element={<Introduction />} />
                 <Route path="/intro" element={<Introduction />} />

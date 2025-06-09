@@ -17,7 +17,15 @@ export default function Introduction() {
 
   return (
 
-      <div className='markdown-body'>
+      <div 
+        className='markdown-body' 
+        style={{ 
+          padding: '0 16px',
+          maxWidth: '100%',
+          overflow: 'hidden',
+          wordWrap: 'break-word'
+        }}
+      >
         <Skeleton loading={markdown==''} active title>
         <ReactMarkdown children={markdown} />
         </Skeleton>

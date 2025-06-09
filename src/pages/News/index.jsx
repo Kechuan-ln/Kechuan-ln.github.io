@@ -79,22 +79,35 @@ export default function News() {
             <List.Item.Meta
               title={<a onClick={() => navigate(`/news/${item.filename}`)}>{i18n.language === 'zh' ? item.title : item.title_en}</a>}
               description={
-                <Space>
-                  <span>{item.date}</span>
-                  <ViewCounter views={views} />
-                  <LikeDislike
-                    itemId={item.filename}
-                    initialLikes={ratings.likes}
-                    initialDislikes={ratings.dislikes}
-                    objectId={ratings.objectId}
-                  />
-                  <div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  <Space wrap>
+                    <span>{item.date}</span>
+                    <ViewCounter views={views} />
+                    <LikeDislike
+                      itemId={item.filename}
+                      initialLikes={ratings.likes}
+                      initialDislikes={ratings.dislikes}
+                      objectId={ratings.objectId}
+                    />
+                  </Space>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px', maxWidth: '100%' }}>
                     {item.tags && item.tags.map((f, tagIndex) => (
-                      <Tag key={f} bordered={false} color="blue">
+                      <Tag 
+                        key={f} 
+                        bordered={false} 
+                        color="blue"
+                        style={{ 
+                          marginRight: '0',
+                          marginBottom: '4px',
+                          maxWidth: '100%',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis'
+                        }}
+                      >
                         {t(f)}
                       </Tag>))}
                   </div>
-                </Space>
+                </div>
               }
             />
              {i18n.language == 'zh' ? item.brief : item.brief_en}

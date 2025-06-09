@@ -65,4 +65,55 @@
         height: 120px !important;
         font-size: 40px !important;
     }
+    
+    /* 手机端内容区域优化 */
+    .ant-card {
+        padding: 8px !important;
+    }
+    
+    .ant-tabs-content-holder {
+        padding: 8px !important;
+    }
+    
+    /* Markdown内容移动端优化 */
+    .markdown-body {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        padding: 8px 12px !important;
+    }
+    
+    .markdown-body h4 {
+        font-size: 16px !important;
+        margin: 12px 0 8px 0 !important;
+    }
+    
+    .markdown-body p {
+        margin: 8px 0 !important;
+    }
+    
+    .markdown-body ul, .markdown-body ol {
+        padding-left: 20px !important;
+        margin: 8px 0 !important;
+    }
+    
+    .markdown-body li {
+        margin: 4px 0 !important;
+    }
+}
+
+/* 平板端优化 */
+@media (max-width: 768px) {
+    .ant-list-item {
+        padding: 12px !important;
+    }
+    
+    .ant-list-item-meta-title {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+    }
+    
+    .ant-tag {
+        font-size: 12px !important;
+        padding: 2px 6px !important;
+    }
 }
