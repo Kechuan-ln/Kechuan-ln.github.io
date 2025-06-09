@@ -88,15 +88,46 @@ export default function NewsDetail() {
               objectId={ratingData.objectId}
             />
           </Space>
-          <ReactMarkdown children={content} />
+          <ReactMarkdown 
+            children={content}
+            components={{
+              img: ({node, ...props}) => {
+                // 修复图片路径，移除 ../ 并确保正确的base路径
+                let src = props.src;
+                if (src && src.startsWith('../posts/')) {
+                  src = src.replace('../posts/', 'posts/');
+                }
+                return (
+                  <img 
+                    {...props} 
+                    src={src} 
+                    style={{
+                      maxWidth: '100%', 
+                      height: 'auto',
+                      borderRadius: '8px',
+                      marginBottom: '16px',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+                    }}
+                    onError={(e) => {
+                      console.error('Image failed to load:', src);
+                      e.target.style.display = 'none';
+                    }}
+                    loading="lazy"
+                  />
+                )
+              }
+            }}
+          />
           <Divider>
             <Space>
-            {t("你觉得这项研究怎么样？")}<LikeDislike
-            itemId={filename}
-            initialLikes={ratingData.likes}
-            initialDislikes={ratingData.dislikes}
-            objectId={ratingData.objectId}
-          /></Space>
+            {t("你觉得这项研究怎么样？")}
+            <LikeDislike
+              itemId={filename}
+              initialLikes={ratingData.likes}
+              initialDislikes={ratingData.dislikes}
+              objectId={ratingData.objectId}
+            />
+            </Space>
           </Divider>
 
         </div>
