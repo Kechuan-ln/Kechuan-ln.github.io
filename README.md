@@ -1,56 +1,116 @@
-# ni1o1
+# 董克川个人学术主页 | Kechuan Dong's Academic Homepage
 
-This project is a web application built with React and Vite. It utilizes various libraries for UI components, data visualization, and routing.
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen.svg)](https://kechuan-ln.github.io/)
+[![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF.svg)](https://vitejs.dev/)
 
-## Project Structure
+欢迎访问董克川的个人学术主页！这是一个基于React和Vite构建的现代化响应式网站，展示学术研究、项目经历和个人信息。
 
-- `src/`: Contains the main source code for the React application.
-- `public/`: Contains static assets that are copied directly to the build output.
-- `docs/`: Contains the built application files, intended for deployment (e.g., GitHub Pages).
+Welcome to Kechuan Dong's academic homepage! This is a modern, responsive website built with React and Vite, showcasing academic research, project experience, and personal information.
 
-## Key Technologies
+## 🌐 在线访问 | Live Site
 
-- **Framework:** React
-- **Build Tool:** Vite
-- **UI Library:** Ant Design (`antd`, `@ant-design/pro-components`)
-- **Routing:** React Router DOM (`react-router-dom`)
-- **Data Visualization:**
-    - Deck.gl (`deck.gl`, `react-map-gl`)
-    - ECharts (`echarts`, `echarts-for-react`)
-- **Internationalization:** i18next (`i18next`, `react-i18next`)
-- **HTTP Client:** Axios (`axios`)
-- **Linting:** ESLint
+- **主站**: [https://kechuan-ln.github.io/](https://kechuan-ln.github.io/)
+- **备用域名**: 即将设置 | Alternative domain: Coming soon
 
-## Available Scripts
+## 👨‍🎓 关于 | About
 
-In the project directory, you can run:
+董克川，东京大学电子情报学专业研究生，研究方向包括：
+- 深度学习 (Deep Learning)
+- 人体姿态估计 (Human Pose Estimation)
+- 空间数据科学 (Spatial Data Science)  
+- 可再生能源估计 (Renewable Energy Estimation)
 
-### `npm install` or `yarn install`
+Kechuan Dong, graduate student in Information and Communication Engineering at University of Tokyo, with research interests in Deep Learning, Human Pose Estimation, Spatial Data Science, and Renewable Energy Estimation.
 
-Installs the project dependencies.
+## 🛠️ 技术栈 | Tech Stack
 
-### `npm run dev` or `yarn dev`
+### 前端框架 | Frontend Framework
+- **React 18** - 现代化UI组件库
+- **Vite** - 快速构建工具
+- **React Router** - 单页应用路由
 
-Runs the app in development mode using Vite.
-Open [http://localhost:5173](http://localhost:5173) (or the port specified by Vite) to view it in the browser.
+### UI组件 | UI Components
+- **Ant Design** - 企业级UI设计语言
+- **Ant Design Pro Components** - 高级业务组件
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+### 数据可视化 | Data Visualization
+- **Deck.gl** - WebGL驱动的大数据可视化
+- **ECharts** - 丰富的图表库
+- **React Map GL** - 交互式地图组件
 
-### `npm run build` or `yarn build`
+### 国际化 | Internationalization
+- **i18next** - 多语言支持(中文/英文)
 
-Builds the app for production to the `dist` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-The build command also removes the existing `docs` folder and renames the `dist` folder to `docs`, preparing it for deployment (e.g., GitHub Pages).
+### 其他工具 | Other Tools
+- **Axios** - HTTP客户端
+- **ESLint** - 代码质量检查
 
-### `npm run lint` or `yarn lint`
+## 🚀 本地开发 | Local Development
 
-Lints the project files using ESLint.
+### 环境要求 | Prerequisites
+- Node.js 16.0 或更高版本
+- npm 或 yarn 包管理器
 
-### `npm run preview` or `yarn preview`
+### 安装依赖 | Install Dependencies
+```bash
+npm install
+# 或 or
+yarn install
+```
 
-Serves the production build locally using Vite's preview server. This is useful for checking the production build before deployment.
+### 启动开发服务器 | Start Development Server
+```bash
+npm run dev
+# 或 or  
+yarn dev
+```
 
-## License
+访问 [http://localhost:5173](http://localhost:5173) 查看网站
 
-This project is licensed under the MIT License. See the `package.json` file for details.
+### 构建生产版本 | Build for Production
+```bash
+npm run build
+# 或 or
+yarn build
+```
+
+构建文件会输出到 `docs/` 目录，用于GitHub Pages部署。
+
+## 📁 项目结构 | Project Structure
+
+```
+├── public/          # 静态资源文件
+├── src/            # 源代码
+│   ├── components/ # React组件
+│   ├── pages/      # 页面组件  
+│   ├── assets/     # 图片、样式等资源
+│   └── main.jsx    # 应用入口
+├── docs/           # 构建输出(GitHub Pages)
+└── index.html      # HTML模板
+```
+
+## 🔧 SEO优化 | SEO Optimization
+
+- ✅ 完整的meta标签配置
+- ✅ Open Graph和Twitter Card支持
+- ✅ 结构化数据(JSON-LD)
+- ✅ 多语言hreflang标签
+- ✅ 响应式设计
+- ✅ 快速加载性能
+
+## 📞 联系方式 | Contact
+
+- **邮箱 | Email**: kechuan.dong@outlook.com
+- **GitHub**: [Kechuan-ln](https://github.com/Kechuan-ln)
+- **Google Scholar**: [Profile](https://scholar.google.com/citations?user=dm8zvHcAAAAJ)
+- **ResearchGate**: [Profile](https://www.researchgate.net/profile/Kechuan-Dong)
+
+## 📄 许可证 | License
+
+MIT License - 详见 LICENSE 文件
+
+---
+
+⭐ 如果这个项目对您有帮助，请给个星标支持！  
+⭐ If this project helps you, please give it a star!
